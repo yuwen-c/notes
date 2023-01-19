@@ -1,0 +1,17 @@
+# iterable, enumerable
+
+## for/of, for/in
+
+- `for of` does Not work with object because it's not iterating.
+    - ITERATING, iterable: array and string
+- `for in` loops over the enumerable property names of an obj.
+    - array, string, object.
+
+## `[...Array(10).keys()] = ?`
+
+1. Array(10) -> 10個item的array，每個都是undefined
+2. Array.keys() 我沒用過，實際跑完是array iterator, 型別是object
+3. 整題console出來會是 `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+- spread operator可以把array裡面的東西拿出來放到array，或是把obejct pair拿出來放到object，但這邊iterator拿出來放到array裡，我不懂
+- 不太懂考點在哪？平常常用的會是Object.keys()跟spread operator，是想考iterator嗎？
+- 可能是考array的index就類似object裡面的property?
